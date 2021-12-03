@@ -8,6 +8,7 @@ import zio.stream.ZPipeline
 import java.io.IOException
 import y2021.LineStream
 
+//NOK
 object App2 extends App with LineStream {
 
   def select(
