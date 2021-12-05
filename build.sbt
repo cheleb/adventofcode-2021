@@ -9,6 +9,7 @@ ThisBuild / organizationName := "example"
 lazy val root = (project in file("."))
   .settings(
     name := "adventofcode",
+    scalafmtOnCompile := true,
     libraryDependencies += "dev.zio" %% "zio-streams" % "2.0.0-M6-2",
     libraryDependencies += scalaTest % Test
   )

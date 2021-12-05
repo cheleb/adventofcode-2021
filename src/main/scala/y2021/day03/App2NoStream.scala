@@ -23,11 +23,11 @@ object App2NoStream extends App with LineStream {
         .partition { line =>
           line.charAt(n) == '1'
         }
-      if (p(ones.length, zeros.length))
-        if (ones.length == 1) ones.head
-        else select(ones, p, n + 1)
-      else if (zeros.length == 1) zeros.head
-      else select(zeros, p, n + 1)
+    if (p(ones.length, zeros.length))
+      if (ones.length == 1) ones.head
+      else select(ones, p, n + 1)
+    else if (zeros.length == 1) zeros.head
+    else select(zeros, p, n + 1)
 
   }
 
